@@ -1,43 +1,43 @@
-# python_api_framework
-这是一个关于python的接口API自动化测试的项目，之前用的是unittest测试框架，现在改成pytest测试框架:Python+Excle+Pytest
-目前大体功能，按照版本测试需要支持，执行全部用例，按照用例等级按需执行， 设置用例标识按需执行,
+      # python_api_framework
+      这是一个关于python的接口API自动化测试的项目，之前用的是unittest测试框架，现在改成pytest测试框架:Python+Excle+Pytest
+      目前大体功能，按照版本测试需要支持，执行全部用例，按照用例等级按需执行， 设置用例标识按需执行,
 
-目前只是将 unittest 改成pytest了， 
-  1、用例之间的依赖，数据依赖，过几天更新
-  2、DB数据库校验等目前还没有做，过几天更新
+      目前只是将 unittest 改成pytest了， 
+        1、用例之间的依赖，数据依赖，过几天更新
+        2、DB数据库校验等目前还没有做，过几天更新
 
 
-.
-|-- Case
-|   |-- conftest.py
-|   |-- __init__.py
-|   |-- logincase
-|   |   |-- conftest.py
-|   |   |-- __init__.py
-|   |   `-- test_login.py
-|   `-- usercase
-|       |-- conftest.py
-|       |-- __init__.py
-|       `-- test_user.py
-|-- Common
-|   |-- conf
-|   |   |-- env_config.ini
-|   |   `-- __init__.py
-|   |-- __init__.py
-|   `-- plugs
-|       |-- get_config.py
-|       |-- get_db.py
-|       |-- get_excle.py
-|       |-- get_globals_data.py
-|       |-- get_log.py
-|       |-- http_requests.py
-|       `-- __init__.py
-|-- OutPut
-|   `-- log
-|       `-- 2019-10-11.log
-`-- TestData
-    |-- case.xlsx
-    `-- __init__.py
+      .
+      |-- Case
+      |   |-- conftest.py
+      |   |-- __init__.py
+      |   |-- logincase
+      |   |   |-- conftest.py
+      |   |   |-- __init__.py
+      |   |   `-- test_login.py
+      |   `-- usercase
+      |       |-- conftest.py
+      |       |-- __init__.py
+      |       `-- test_user.py
+      |-- Common
+      |   |-- conf
+      |   |   |-- env_config.ini
+      |   |   `-- __init__.py
+      |   |-- __init__.py
+      |   `-- plugs
+      |       |-- get_config.py
+      |       |-- get_db.py
+      |       |-- get_excle.py
+      |       |-- get_globals_data.py
+      |       |-- get_log.py
+      |       |-- http_requests.py
+      |       `-- __init__.py
+      |-- OutPut
+      |   `-- log
+      |       `-- 2019-10-11.log
+      `-- TestData
+          |-- case.xlsx
+          `-- __init__.py
 
 
 2019-10-11 00:09:15,517 - root - INFO - ==========开始 XX模块 执行测试===========
