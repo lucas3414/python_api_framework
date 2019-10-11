@@ -16,15 +16,17 @@ caseList = split_list(DE.read_data())[0][0]
 logger = Log(log_path)
 
 
+
+
 @pytest.fixture(scope='class')
 def start_module(project_module_start):
     logger.info("==========开始执行测试用例集===========")
-    headers = project_module_start
+    headers = project_module_start[0]
     logger.info("开始执行 ------- {0} 用例".format(caseList['description']))
-    ret = BaseRequest(url=caseList['url'], headers=project_module_start, method=caseList['method'],
+    ret = BaseRequest(url=caseList['url'], headers=project_module_start[0], method=caseList['method'],
                       data=eval(caseList['parm'])).get_json()
     # 将 token 加入到请求投中
     if ret['data'] != None and 'token' in ret['data']:
         headers['Authorization'] = ret['data']['token']
-    yield headers
+    yield (headers, project_module_start[1])
     logger.info("==========结束执行测试用例集===========")

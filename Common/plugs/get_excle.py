@@ -22,6 +22,7 @@ class DoExcle:
             row_data['url'] = sheet.cell(i, 5).value
             row_data['parm'] = sheet.cell(i, 6).value
             row_data['excepted'] = sheet.cell(i, 7).value
+            row_data['sql'] = sheet.cell(i, 8).value
             test_data.append(row_data)
         return test_data
 
@@ -41,6 +42,7 @@ def split_list(lst, n=3):
 
 
 if __name__ == '__main__':
-    DE = DoExcle('../../TestData/case.xlsx', 'login')
+    DE = DoExcle('../../TestData/case.xlsx', 'user')
     caseList = split_list(DE.read_data())
     print(caseList[0])
+    print(caseList[0][0]['sql'])

@@ -13,6 +13,5 @@ logger = Log(log_path)
 @pytest.fixture(scope='class')
 def start_module(project_module_start):
     logger.info("==========开始执行测试用例集===========")
-    headers = project_module_start
-    yield headers
+    yield project_module_start
     logger.info("==========结束执行测试用例集===========")

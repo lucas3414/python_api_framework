@@ -22,7 +22,8 @@ class TestLogin:
     @pytest.mark.parametrize('item', caseList[0])
     def test_P1_login(self, start_module, item):
         logger.info("开始执行 ------- {0}".format(item['description']))
-        ret = BaseRequest(url=item['url'], headers=start_module, method=item['method'],
+
+        ret = BaseRequest(url=item['url'], headers=start_module[0], method=item['method'],
                           data=eval(item['parm'])).get_json()
 
         try:
@@ -32,20 +33,18 @@ class TestLogin:
             TestResult = 'PASS'
         except AssertionError as e:
             TestResult = 'Fail'
-            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(e))
+            DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-            raise e
         finally:
-            
-            DE.write_data(item['sheetname'], item['id'] + 1, 9, str(ret))
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
-            DE.write_data(item['sheetname'], item['id'] + 1, 10, TestResult)
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
 
     @pytest.mark.p2
     @pytest.mark.parametrize('item', caseList[1])
     def test_P2_login(self, start_module, item):
         logger.info("开始执行 ------- {0}".format(item['description']))
-        ret = BaseRequest(url=item['url'], headers=start_module, method=item['method'],
+        ret = BaseRequest(url=item['url'], headers=start_module[0], method=item['method'],
                           data=eval(item['parm'])).get_json()
 
         try:
@@ -55,20 +54,18 @@ class TestLogin:
             TestResult = 'PASS'
         except AssertionError as e:
             TestResult = 'Fail'
-            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(e))
+            DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-            raise e
         finally:
-            logger.info("接口响应值：{0}".format(str(ret)))
-            DE.write_data(item['sheetname'], item['id'] + 1, 9, str(ret))
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
-            DE.write_data(item['sheetname'], item['id'] + 1, 10, TestResult)
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
 
     @pytest.mark.p3
     @pytest.mark.parametrize('item', caseList[2])
     def test_P3_login(self, start_module, item):
         logger.info("开始执行 ------- {0}".format(item['description']))
-        ret = BaseRequest(url=item['url'], headers=start_module, method=item['method'],
+        ret = BaseRequest(url=item['url'], headers=start_module[0], method=item['method'],
                           data=eval(item['parm'])).get_json()
 
         try:
@@ -78,11 +75,9 @@ class TestLogin:
             TestResult = 'PASS'
         except AssertionError as e:
             TestResult = 'Fail'
-            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(e))
+            DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-            raise e
         finally:
-            logger.info("接口响应值：{0}".format(str(ret)))
-            DE.write_data(item['sheetname'], item['id'] + 1, 9, str(ret))
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
-            DE.write_data(item['sheetname'], item['id'] + 1, 10, TestResult)
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
