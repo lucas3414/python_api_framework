@@ -36,7 +36,7 @@ class TestLogin:
             logger.error("断言失败：{0}".format(str(e)))
             raise e
         finally:
-            logger.info("接口响应值：{0}".format(str(ret)))
+            
             DE.write_data(item['sheetname'], item['id'] + 1, 9, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 10, TestResult)

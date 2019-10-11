@@ -1,73 +1,150 @@
-2019-10-11 00:09:15,176 - root - INFO - ==========开始 XX模块 执行测试===========
-2019-10-11 00:09:15,176 - root - INFO - ==========开始执行测试用例集===========
-2019-10-11 00:09:15,177 - root - INFO - 开始执行 ------- 正常登录测试
-2019-10-11 00:09:15,243 - root - INFO - 期望值：200
-2019-10-11 00:09:15,243 - root - INFO - 实际值：200
-2019-10-11 00:09:15,244 - root - INFO - 接口响应值：{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzIzNzU1LCJleHAiOjE1NzA4MTAxNTZ9.Yz9v262ktNNv6IGaN38gp7lUtw1CibJf0FDjEGuearw'}, 'meta': {'msg': '登录成功', 'status': 200}}
-2019-10-11 00:09:15,264 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,284 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
-2019-10-11 00:09:15,288 - root - INFO - 期望值：400
-2019-10-11 00:09:15,288 - root - INFO - 实际值：400
-2019-10-11 00:09:15,289 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名不存在', 'status': 400}}
-2019-10-11 00:09:15,307 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,327 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
-2019-10-11 00:09:15,392 - root - INFO - 期望值：400
-2019-10-11 00:09:15,393 - root - INFO - 实际值：400
-2019-10-11 00:09:15,393 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '密码错误', 'status': 400}}
-2019-10-11 00:09:15,411 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,431 - root - INFO - 开始执行 ------- 异常登录测试,用户名为空
-2019-10-11 00:09:15,434 - root - INFO - 期望值：400
-2019-10-11 00:09:15,434 - root - INFO - 实际值：400
-2019-10-11 00:09:15,434 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
-2019-10-11 00:09:15,454 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,474 - root - INFO - 开始执行 ------- 异常登录测试,密码为空
-2019-10-11 00:09:15,476 - root - INFO - 期望值：400
-2019-10-11 00:09:15,477 - root - INFO - 实际值：400
-2019-10-11 00:09:15,477 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
-2019-10-11 00:09:15,496 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,515 - root - INFO - ==========结束执行测试用例集===========
-2019-10-11 00:09:15,516 - root - INFO - ==========结束 XX模块 测试===========
-2019-10-11 00:09:15,517 - root - INFO - ==========开始 XX模块 执行测试===========
-2019-10-11 00:09:15,517 - root - INFO - ==========开始执行测试用例集===========
-2019-10-11 00:09:15,518 - root - INFO - 开始执行 ------- 正常登录测试 用例
-2019-10-11 00:09:15,583 - root - INFO - 开始执行 ------- 添加用户， 正常用例 用例
-2019-10-11 00:09:15,591 - root - INFO - 期望值：201
-2019-10-11 00:09:15,591 - root - INFO - 实际值：400
-2019-10-11 00:09:15,610 - root - ERROR - 断言失败：assert '201' == '400'
+2019-10-11 10:15:07,349 - root - INFO - ==========开始 XX模块 执行测试===========
+2019-10-11 10:15:07,349 - root - INFO - ==========开始执行测试用例集===========
+2019-10-11 10:15:07,349 - root - INFO - 开始执行 ------- 正常登录测试
+2019-10-11 10:15:07,349 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,349 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,349 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,349 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,349 - root - INFO - 接口数据: {'username': 'admin', 'password': '123456'}
+2019-10-11 10:15:07,412 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,412 - root - INFO - 响应结果json:{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}, 'meta': {'msg': '登录成功', 'status': 200}}
+2019-10-11 10:15:07,412 - root - INFO - 期望值：200
+2019-10-11 10:15:07,412 - root - INFO - 实际值：200
+2019-10-11 10:15:07,427 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,458 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
+2019-10-11 10:15:07,458 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,458 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,458 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,458 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,458 - root - INFO - 接口数据: {'username': 'admin1', 'password': '123456'}
+2019-10-11 10:15:07,458 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,458 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名不存在', 'status': 400}}
+2019-10-11 10:15:07,458 - root - INFO - 期望值：400
+2019-10-11 10:15:07,458 - root - INFO - 实际值：400
+2019-10-11 10:15:07,458 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名不存在', 'status': 400}}
+2019-10-11 10:15:07,474 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,505 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
+2019-10-11 10:15:07,505 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,505 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,505 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,505 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,505 - root - INFO - 接口数据: {'username': 'admin', 'password': '1234567'}
+2019-10-11 10:15:07,568 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,568 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '密码错误', 'status': 400}}
+2019-10-11 10:15:07,568 - root - INFO - 期望值：400
+2019-10-11 10:15:07,568 - root - INFO - 实际值：400
+2019-10-11 10:15:07,568 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '密码错误', 'status': 400}}
+2019-10-11 10:15:07,583 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,599 - root - INFO - 开始执行 ------- 异常登录测试,用户名为空
+2019-10-11 10:15:07,599 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,599 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,599 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,599 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,599 - root - INFO - 接口数据: {'username': '', 'password': '123456'}
+2019-10-11 10:15:07,615 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,615 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-11 10:15:07,615 - root - INFO - 期望值：400
+2019-10-11 10:15:07,615 - root - INFO - 实际值：400
+2019-10-11 10:15:07,615 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-11 10:15:07,630 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,646 - root - INFO - 开始执行 ------- 异常登录测试,密码为空
+2019-10-11 10:15:07,646 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,646 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,646 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,646 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,646 - root - INFO - 接口数据: {'username': 'admin', 'password': ''}
+2019-10-11 10:15:07,646 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,646 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-11 10:15:07,646 - root - INFO - 期望值：400
+2019-10-11 10:15:07,662 - root - INFO - 实际值：400
+2019-10-11 10:15:07,662 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-11 10:15:07,677 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,693 - root - INFO - ==========结束执行测试用例集===========
+2019-10-11 10:15:07,693 - root - INFO - ==========结束 XX模块 测试===========
+2019-10-11 10:15:07,693 - root - INFO - ==========开始 XX模块 执行测试===========
+2019-10-11 10:15:07,693 - root - INFO - ==========开始执行测试用例集===========
+2019-10-11 10:15:07,693 - root - INFO - 开始执行 ------- 正常登录测试 用例
+2019-10-11 10:15:07,693 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,693 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-11 10:15:07,693 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-11 10:15:07,693 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,693 - root - INFO - 接口数据: {'username': 'admin', 'password': '123456'}
+2019-10-11 10:15:07,771 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,771 - root - INFO - 响应结果json:{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}, 'meta': {'msg': '登录成功', 'status': 200}}
+2019-10-11 10:15:07,771 - root - INFO - 开始执行 ------- 添加用户， 正常用例 用例
+2019-10-11 10:15:07,771 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,771 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:07,771 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:07,771 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,771 - root - INFO - 接口数据: {'username': 'wang', 'password': '123456', 'email': '123@qq.com', 'mobile': '13776765656'}
+2019-10-11 10:15:07,771 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,771 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-11 10:15:07,771 - root - INFO - 期望值：201
+2019-10-11 10:15:07,771 - root - INFO - 实际值：400
+2019-10-11 10:15:07,802 - root - ERROR - 断言失败：assert '201' == '400'
   - 201
   + 400
-2019-10-11 00:09:15,611 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
-2019-10-11 00:09:15,631 - root - INFO - 接口测试结果：Fail
-2019-10-11 00:09:15,692 - root - INFO - 开始执行 ------- 添加用户， 异常用例，用户名为空 用例
-2019-10-11 00:09:15,695 - root - INFO - 期望值：400
-2019-10-11 00:09:15,695 - root - INFO - 实际值：400
-2019-10-11 00:09:15,695 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名不能为空', 'status': 400}}
-2019-10-11 00:09:15,714 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,735 - root - INFO - 开始执行 ------- 添加用户， 异常用例，密码为空 用例
-2019-10-11 00:09:15,737 - root - INFO - 期望值：400
-2019-10-11 00:09:15,738 - root - INFO - 实际值：400
-2019-10-11 00:09:15,738 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '密码不能为空', 'status': 400}}
-2019-10-11 00:09:15,757 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,776 - root - INFO - 开始执行 ------- 添加用户， 异常用例，邮箱为空 用例
-2019-10-11 00:09:15,783 - root - INFO - 期望值：201
-2019-10-11 00:09:15,783 - root - INFO - 实际值：400
-2019-10-11 00:09:15,802 - root - ERROR - 断言失败：assert '201' == '400'
+2019-10-11 10:15:07,818 - root - INFO - 接口测试结果：Fail
+2019-10-11 10:15:07,881 - root - INFO - 开始执行 ------- 添加用户， 异常用例，用户名为空 用例
+2019-10-11 10:15:07,881 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,881 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:07,881 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:07,881 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,881 - root - INFO - 接口数据: {'username': '', 'password': '123456'}
+2019-10-11 10:15:07,881 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,881 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名不能为空', 'status': 400}}
+2019-10-11 10:15:07,881 - root - INFO - 期望值：400
+2019-10-11 10:15:07,881 - root - INFO - 实际值：400
+2019-10-11 10:15:07,896 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,927 - root - INFO - 开始执行 ------- 添加用户， 异常用例，密码为空 用例
+2019-10-11 10:15:07,927 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,927 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:07,927 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:07,927 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,927 - root - INFO - 接口数据: {'username': 'wang1', 'password': ''}
+2019-10-11 10:15:07,927 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,927 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '密码不能为空', 'status': 400}}
+2019-10-11 10:15:07,927 - root - INFO - 期望值：400
+2019-10-11 10:15:07,927 - root - INFO - 实际值：400
+2019-10-11 10:15:07,943 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:07,974 - root - INFO - 开始执行 ------- 添加用户， 异常用例，邮箱为空 用例
+2019-10-11 10:15:07,974 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:07,974 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:07,974 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:07,974 - root - INFO - 接口类型: POST
+2019-10-11 10:15:07,974 - root - INFO - 接口数据: {'username': 'wang2', 'password': '123456', 'email': '', 'mobile': '13776765656'}
+2019-10-11 10:15:07,974 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:07,974 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-11 10:15:07,974 - root - INFO - 期望值：201
+2019-10-11 10:15:07,974 - root - INFO - 实际值：400
+2019-10-11 10:15:07,990 - root - ERROR - 断言失败：assert '201' == '400'
   - 201
   + 400
-2019-10-11 00:09:15,803 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
-2019-10-11 00:09:15,821 - root - INFO - 接口测试结果：Fail
-2019-10-11 00:09:15,848 - root - INFO - 开始执行 ------- 添加用户， 异常用例，手机号空 用例
-2019-10-11 00:09:15,855 - root - INFO - 期望值：201
-2019-10-11 00:09:15,855 - root - INFO - 实际值：400
-2019-10-11 00:09:15,874 - root - ERROR - 断言失败：assert '201' == '400'
+2019-10-11 10:15:08,021 - root - INFO - 接口测试结果：Fail
+2019-10-11 10:15:08,037 - root - INFO - 开始执行 ------- 添加用户， 异常用例，手机号空 用例
+2019-10-11 10:15:08,037 - root - INFO - 准备发送 POST 请求
+2019-10-11 10:15:08,037 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:08,037 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:08,037 - root - INFO - 接口类型: POST
+2019-10-11 10:15:08,037 - root - INFO - 接口数据: {'username': 'wang3', 'password': '123456', 'email': '123@qq.com', 'mobile': ''}
+2019-10-11 10:15:08,052 - root - INFO - 完成 POST 请求
+2019-10-11 10:15:08,052 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-11 10:15:08,052 - root - INFO - 期望值：201
+2019-10-11 10:15:08,052 - root - INFO - 实际值：400
+2019-10-11 10:15:08,068 - root - ERROR - 断言失败：assert '201' == '400'
   - 201
   + 400
-2019-10-11 00:09:15,874 - root - INFO - 接口响应值：{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
-2019-10-11 00:09:15,893 - root - INFO - 接口测试结果：Fail
-2019-10-11 00:09:15,918 - root - INFO - 开始执行 ------- 获取所有用户列表 用例
-2019-10-11 00:09:15,926 - root - INFO - 期望值：200
-2019-10-11 00:09:15,926 - root - INFO - 实际值：200
-2019-10-11 00:09:15,926 - root - INFO - 接口响应值：{'data': {'total': 9, 'pagenum': 1, 'users': [{'id': 500, 'role_name': '主管', 'username': 'admin', 'create_time': 1486720211, 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'mg_state': True}, {'id': 502, 'role_name': '主管', 'username': 'linken', 'create_time': 1486720211, 'mobile': '120', 'email': '123@qq.com', 'mg_state': True}, {'id': 508, 'role_name': '测试角色', 'username': 'asdf1', 'create_time': 1511853015, 'mobile': '1231231', 'email': 'adfsa@qq.com', 'mg_state': True}, {'id': 574, 'role_name': '测试角色2', 'username': '12333', 'create_time': 1560799836, 'mobile': '13', 'email': '123', 'mg_state': False}, {'id': 597, 'role_name': '主管', 'username': 'luhy', 'create_time': 1565776785, 'mobile': '137722321878767611111233', 'email': '11111123@qq.com231', 'mg_state': True}, {'id': 623, 'role_name': '超级管理员', 'username': 'haha', 'create_time': 1568824982, 'mobile': '13776787676', 'email': '123@qq.com', 'mg_state': False}, {'id': 654, 'role_name': '超级管理员', 'username': 'wang', 'create_time': 1570712763, 'mobile': '13776765656', 'email': '123@qq.com', 'mg_state': False}, {'id': 655, 'role_name': '超级管理员', 'username': 'wang2', 'create_time': 1570712763, 'mobile': '13776765656', 'email': '', 'mg_state': False}, {'id': 656, 'role_name': '超级管理员', 'username': 'wang3', 'create_time': 1570712763, 'mobile': '', 'email': '123@qq.com', 'mg_state': False}]}, 'meta': {'msg': '获取管理员列表成功', 'status': 200}}
-2019-10-11 00:09:15,946 - root - INFO - 接口测试结果：PASS
-2019-10-11 00:09:15,966 - root - INFO - ==========结束执行测试用例集===========
-2019-10-11 00:09:15,966 - root - INFO - ==========结束 XX模块 测试===========
+2019-10-11 10:15:08,084 - root - INFO - 接口测试结果：Fail
+2019-10-11 10:15:08,115 - root - INFO - 开始执行 ------- 获取所有用户列表 用例
+2019-10-11 10:15:08,115 - root - INFO - 准备发送 GET 请求
+2019-10-11 10:15:08,115 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcwNzYwMTA3LCJleHAiOjE1NzA4NDY1MDh9.Mds-GPCrI8KRSb3quhlH1wyefZ7s8nvW5FoK3zqUZNk'}
+2019-10-11 10:15:08,115 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-11 10:15:08,115 - root - INFO - 接口类型: GET
+2019-10-11 10:15:08,115 - root - INFO - 接口数据: {'query': '', 'pagenum': 1, 'pagesize': 10}
+2019-10-11 10:15:08,130 - root - INFO - 完成 GET 请求
+2019-10-11 10:15:08,130 - root - INFO - 响应结果json:{'data': {'total': 9, 'pagenum': 1, 'users': [{'id': 500, 'role_name': '主管', 'username': 'admin', 'create_time': 1486720211, 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'mg_state': True}, {'id': 502, 'role_name': '主管', 'username': 'linken', 'create_time': 1486720211, 'mobile': '120', 'email': '123@qq.com', 'mg_state': True}, {'id': 508, 'role_name': '测试角色', 'username': 'asdf1', 'create_time': 1511853015, 'mobile': '1231231', 'email': 'adfsa@qq.com', 'mg_state': True}, {'id': 574, 'role_name': '测试角色2', 'username': '12333', 'create_time': 1560799836, 'mobile': '13', 'email': '123', 'mg_state': False}, {'id': 597, 'role_name': '主管', 'username': 'luhy', 'create_time': 1565776785, 'mobile': '137722321878767611111233', 'email': '11111123@qq.com231', 'mg_state': True}, {'id': 623, 'role_name': '超级管理员', 'username': 'haha', 'create_time': 1568824982, 'mobile': '13776787676', 'email': '123@qq.com', 'mg_state': False}, {'id': 654, 'role_name': '超级管理员', 'username': 'wang', 'create_time': 1570712763, 'mobile': '13776765656', 'email': '123@qq.com', 'mg_state': False}, {'id': 655, 'role_name': '超级管理员', 'username': 'wang2', 'create_time': 1570712763, 'mobile': '13776765656', 'email': '', 'mg_state': False}, {'id': 656, 'role_name': '超级管理员', 'username': 'wang3', 'create_time': 1570712763, 'mobile': '', 'email': '123@qq.com', 'mg_state': False}]}, 'meta': {'msg': '获取管理员列表成功', 'status': 200}}
+2019-10-11 10:15:08,130 - root - INFO - 期望值：200
+2019-10-11 10:15:08,130 - root - INFO - 实际值：200
+2019-10-11 10:15:08,146 - root - INFO - 接口测试结果：PASS
+2019-10-11 10:15:08,162 - root - INFO - ==========结束执行测试用例集===========
+2019-10-11 10:15:08,162 - root - INFO - ==========结束 XX模块 测试===========
