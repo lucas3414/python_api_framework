@@ -18,23 +18,10 @@ logger = Log(log_path)
 @pytest.mark.usefixtures('start_module')
 class TestUser:
 
-    @pytest.mark.p1
+    @pytest.mark.p11
     @pytest.mark.parametrize('item', caseList[0])
     def test_P1_AddUser(self, start_module, item):
         logger.info("开始执行 ------- {0} 用例".format(item['description']))
-
-        if item['sql'] != None:
-            logger.info(" 请求发送前，开始进行 mysql 数据库检查")
-            logger.info("sql：{0}".format(str(item['sql'])))
-
-        for sql in eval(item['sql']):
-            before_ret = start_module[1].select(sql)
-            logger.info("sql返回结果 {0}".format(str(before_ret)))
-            if len(before_ret) == 0:
-                logger.info("请求前数据库校验失败, sql: {0} 结果： {1}".format(sql, before_ret))
-            else:
-                logger.info("请求前数据库校验正常, sql : {0} 结果： {1}".format(sql, before_ret[0]))
-            DE.write_data(item['sheetname'], item['id'] + 1, 10, str(before_ret))
 
         ret = BaseRequest(url=item['url'], headers=start_module[0], method=item['method'],
                           data=eval(item['parm'])).get_json()
@@ -49,20 +36,23 @@ class TestUser:
                 logger.info("请求后数据库校验正常, sql : {0} 结果： {1}".format(sql, after_ret[0]))
             else:
                 logger.info("请求后数据库校验失败, sql: {0} 结果： {1}".format(sql, after_ret[0]))
-            DE.write_data(item['sheetname'], item['id'] + 1, 9, str(after_ret))
+            DE.write_data(item['sheetname'], item['id'] + 1, 10, str(after_ret))
         try:
             logger.info("期望值：{0}".format(str(item['excepted'])))
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise
 
     @pytest.mark.p2
     @pytest.mark.parametrize('item', caseList[1])
@@ -76,14 +66,17 @@ class TestUser:
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise
 
     @pytest.mark.p3
     @pytest.mark.parametrize('item', caseList[2])
@@ -97,11 +90,14 @@ class TestUser:
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise

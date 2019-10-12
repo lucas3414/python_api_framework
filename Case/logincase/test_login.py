@@ -31,14 +31,17 @@ class TestLogin:
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise
 
     @pytest.mark.p2
     @pytest.mark.parametrize('item', caseList[1])
@@ -52,14 +55,17 @@ class TestLogin:
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise e
 
     @pytest.mark.p3
     @pytest.mark.parametrize('item', caseList[2])
@@ -73,11 +79,14 @@ class TestLogin:
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
             assert str(item['excepted']) == str(ret['meta']['status'])
             TestResult = 'PASS'
+            DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
+            logger.info("接口测试结果：{0}".format(TestResult))
+            DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
         except AssertionError as e:
             TestResult = 'Fail'
             DE.write_data(item['sheetname'], item['id'] + 1, 13, str(e))
             logger.error("断言失败：{0}".format(str(e)))
-        finally:
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))
             DE.write_data(item['sheetname'], item['id'] + 1, 12, TestResult)
+            raise
