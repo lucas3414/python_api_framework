@@ -18,7 +18,7 @@ logger = Log(log_path)
 @pytest.mark.usefixtures('start_module')
 class TestUser:
 
-    @pytest.mark.p1
+    @pytest.mark.p11
     @pytest.mark.parametrize('item', caseList[0])
     def test_P1_AddUser(self, start_module, item):
         logger.info("开始执行 ------- {0} 用例".format(item['description']))
@@ -31,16 +31,21 @@ class TestUser:
         try:
             logger.info("期望值：{0}".format(str(item['excepted'])))
             logger.info("实际值：{0}".format(str(ret['meta']['status'])))
+            logger.info("开始进行 返回值 断言")
             assert str(item['excepted']) == str(ret['meta']['status'])
+            logger.info("结束进行 返回值 断言，断言结果: PASS ")
             for sql in eval(item['sql']):
                 after_ret = start_module[1].select(sql)
                 logger.info("sql返回结果 {0}".format(str(after_ret)))
                 if len(after_ret) == 0:
                     DE.write_data(item['sheetname'], item['id'] + 1, 10, 'sql返回结果为空')
+                    logger.info("开始进行 数据库 断言")
                     assert after_ret == eval(item['parm'])['username']
                 else:
                     DE.write_data(item['sheetname'], item['id'] + 1, 10, str(after_ret))
+                    logger.info("开始进行 数据库 断言")
                     assert after_ret[0][1] == eval(item['parm'])['username']
+                    logger.info("结束进行 数据库 断言，断言结果: PASS ")
             TestResult = 'PASS'
             DE.write_data(item['sheetname'], item['id'] + 1, 11, str(ret))
             logger.info("接口测试结果：{0}".format(TestResult))

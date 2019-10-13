@@ -114,7 +114,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
+# *.log
 local_settings.py
 db.sqlite3
 
@@ -268,3 +268,4 @@ fabric.properties
 .gitignore
 .idea/
 OutPut/
+!/OutPut/log/2019-10-13.log
