@@ -1,10 +1,16 @@
 import pymysql
 import os
+import sys
 from Common.plugs.get_config import r_config
 from Common.plugs.get_log import Log
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+
+if sys.platform == "win32":
+    ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+else:
+    ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini')
+
 log_path = r_config(ENV_CONF_DIR, "log", "log_path")
 database_info = r_config(ENV_CONF_DIR, 'DB', 'database')
 

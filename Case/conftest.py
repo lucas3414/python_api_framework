@@ -1,11 +1,17 @@
 import pytest
 import os
+import sys
 from Common.plugs.get_config import r_config
 from Common.plugs.get_log import Log
 from Common.plugs.get_db import MysqlConnect
 
 BASE_DIR = os.path.dirname((os.path.dirname(__file__)))
-conf_path = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+
+if sys.platform == "win32":
+    conf_path = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+else:
+    conf_path = os.path.join(BASE_DIR, 'Common/conf/env_config.ini')
+
 log_path = r_config(conf_path, "log", "log_path")
 database_info = r_config(conf_path, 'DB', 'database')
 

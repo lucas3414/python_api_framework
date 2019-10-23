@@ -4,7 +4,10 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
-ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+if sys.platform == "win32":
+    ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini').replace('/', '\\')
+else:
+    ENV_CONF_DIR = os.path.join(BASE_DIR, 'Common/conf/env_config.ini')
 
 
 class Config(object):
@@ -54,4 +57,4 @@ def w_config(config_file_path, field, key, value):
 
 if __name__ == '__main__':
     # print(r_config(ENV_CONF_DIR, 'image', 'img_path'))
-    print(r_config(ENV_CONF_DIR, 'RunList', 'run_list'))
+    print(r_config(ENV_CONF_DIR, 'image', 'img_path'))
