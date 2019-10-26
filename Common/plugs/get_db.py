@@ -19,8 +19,16 @@ logger = Log(log_path)
 
 class MysqlConnect:
     def __init__(self, host, port, user, password, database):
-        self.db = pymysql.connect(host=host, user=user, password=password, port=port, database=database, charset='utf8')
-        self.cursor = self.db.cursor()
+        try:
+            logger.info("准备连接数据库")
+            logger.info("连接信息：host:{0}, port:{1}, user:{2}, password:{3}, database:{4}".format(host, port, user, password,
+                                                                                           database))
+            self.db = pymysql.connect(host=host, user=user, password=password, port=port, database=database,
+                                      charset='utf8')
+            logger.info("连接数据库成功")
+            self.cursor = self.db.cursor()
+        except Exception as e:
+            logger.error("连接数据库失败：{0}".format(str(e)))
 
     # 将要插入的数据写成元组传入
     def exec_data(self, sql, data=None):
@@ -35,8 +43,15 @@ class MysqlConnect:
         self.db.commit()
 
     def select(self, sql):
-        self.cursor.execute(sql)
-        return self.cursor.fetchall()
+        try:
+            logger.info("开始查询数据")
+            self.cursor.execute(sql)
+            result = self.cursor.fetchall()
+            logger.info("查询成功")
+            return result
+        except Exception as e:
+            logger.error("查询数据失败：{0}".format(str(e)))
+
 
     # def __del__(self):
     #     self.cursor.close()
@@ -61,7 +76,7 @@ if __name__ == '__main__':
                       eval(database_info)['user'],
                       eval(database_info)['password'],
                       eval(database_info)['db'])
-    ret = mc.select('select * from sp_manager where mg_name = "wang" ')
+    ret = mc.select('select * from sp_manager where mg_name = "admin" ')
     print(ret)
     print(type(ret))
     pass

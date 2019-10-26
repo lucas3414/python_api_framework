@@ -14,11 +14,11 @@ else:
     conf_path = os.path.join(BASE_DIR, 'Common/conf/env_config.ini')
 
 log_path = r_config(conf_path, "log", "log_path")
+logger = Log(log_path)
 test_case_path = r_config(conf_path, "test_case", "test_case_path")
 
 DE = DoExcle(test_case_path, 'login')
 caseList = split_list(DE.read_data())
-logger = Log(log_path)
 
 
 @pytest.mark.usefixtures('start_module')
