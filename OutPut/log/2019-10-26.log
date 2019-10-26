@@ -1,0 +1,321 @@
+2019-10-26 22:45:39,319 - root - INFO - 准备连接数据库
+2019-10-26 22:45:39,319 - root - INFO - 连接信息：host:127.0.0.1, port:3306, user:root, password:123456, database:itcast
+2019-10-26 22:45:39,323 - root - INFO - 连接数据库成功
+2019-10-26 22:45:39,958 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:39,968 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:39,968 - root - INFO - 开始读取数据
+2019-10-26 22:45:39,969 - root - INFO - 读取 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login-id-level-description-method-url-parm-excepted-sql sheet页数据成功
+2019-10-26 22:45:39,969 - root - INFO - 读取数据结束
+2019-10-26 22:45:39,983 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:39,993 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:39,993 - root - INFO - 开始读取数据
+2019-10-26 22:45:39,993 - root - INFO - 读取 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login-id-level-description-method-url-parm-excepted-sql sheet页数据成功
+2019-10-26 22:45:39,993 - root - INFO - 读取数据结束
+2019-10-26 22:45:40,001 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,010 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,010 - root - INFO - 开始读取数据
+2019-10-26 22:45:40,010 - root - INFO - 读取 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user-id-level-description-method-url-parm-excepted-sql sheet页数据成功
+2019-10-26 22:45:40,011 - root - INFO - 读取数据结束
+2019-10-26 22:45:40,022 - root - INFO - ==========开始 XX模块 执行测试===========
+2019-10-26 22:45:40,023 - root - INFO - ==========开始执行测试用例集===========
+2019-10-26 22:45:40,023 - root - INFO - 开始执行 ------- 正常登录测试
+2019-10-26 22:45:40,023 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,024 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,024 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,024 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,024 - root - INFO - 接口数据: {'username': 'admin', 'password': '123456'}
+2019-10-26 22:45:40,091 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,092 - root - INFO - 响应结果json:{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}, 'meta': {'msg': '登录成功', 'status': 200}}
+2019-10-26 22:45:40,093 - root - INFO - 期望值：200
+2019-10-26 22:45:40,093 - root - INFO - 实际值：200
+2019-10-26 22:45:40,093 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,093 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,103 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,104 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,104 - root - INFO - sheet:login, 行数：2， 列数:11, 值:{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}, 'meta': {'msg': '登录成功', 'status': 200}}
+2019-10-26 22:45:40,113 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,113 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,114 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,114 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,124 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,124 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,124 - root - INFO - sheet:login, 行数：2， 列数:12, 值:PASS
+2019-10-26 22:45:40,133 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,135 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
+2019-10-26 22:45:40,135 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,136 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,136 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,136 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,136 - root - INFO - 接口数据: {'username': 'admin1', 'password': '123456'}
+2019-10-26 22:45:40,139 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,139 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名不存在', 'status': 400}}
+2019-10-26 22:45:40,139 - root - INFO - 期望值：400
+2019-10-26 22:45:40,140 - root - INFO - 实际值：400
+2019-10-26 22:45:40,140 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,140 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,149 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,149 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,150 - root - INFO - sheet:login, 行数：3， 列数:11, 值:{'data': None, 'meta': {'msg': '用户名不存在', 'status': 400}}
+2019-10-26 22:45:40,159 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,159 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,159 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,160 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,168 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,169 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,169 - root - INFO - sheet:login, 行数：3， 列数:12, 值:PASS
+2019-10-26 22:45:40,178 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,181 - root - INFO - 开始执行 ------- 异常登录测试,用户名和密码不匹配
+2019-10-26 22:45:40,181 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,181 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,181 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,182 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,182 - root - INFO - 接口数据: {'username': 'admin', 'password': '1234567'}
+2019-10-26 22:45:40,247 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,247 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '密码错误', 'status': 400}}
+2019-10-26 22:45:40,248 - root - INFO - 期望值：400
+2019-10-26 22:45:40,248 - root - INFO - 实际值：400
+2019-10-26 22:45:40,248 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,248 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,258 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,258 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,258 - root - INFO - sheet:login, 行数：4， 列数:11, 值:{'data': None, 'meta': {'msg': '密码错误', 'status': 400}}
+2019-10-26 22:45:40,267 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,268 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,268 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,268 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,278 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,278 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,278 - root - INFO - sheet:login, 行数：4， 列数:12, 值:PASS
+2019-10-26 22:45:40,288 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,289 - root - INFO - 开始执行 ------- 异常登录测试,用户名为空
+2019-10-26 22:45:40,290 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,290 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,290 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,290 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,290 - root - INFO - 接口数据: {'username': '', 'password': '123456'}
+2019-10-26 22:45:40,293 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,293 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-26 22:45:40,293 - root - INFO - 期望值：112
+2019-10-26 22:45:40,293 - root - INFO - 实际值：400
+2019-10-26 22:45:40,294 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,294 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,304 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,304 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,304 - root - INFO - sheet:login, 行数：5， 列数:13, 值:assert '112' == '400'
+  - 112
+  + 400
+2019-10-26 22:45:40,313 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,313 - root - ERROR - 断言失败：assert '112' == '400'
+  - 112
+  + 400
+2019-10-26 22:45:40,314 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,314 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,323 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,324 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,324 - root - INFO - sheet:login, 行数：5， 列数:11, 值:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-26 22:45:40,336 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,337 - root - INFO - 接口测试结果：Fail
+2019-10-26 22:45:40,337 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,337 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,348 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,348 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,348 - root - INFO - sheet:login, 行数：5， 列数:12, 值:Fail
+2019-10-26 22:45:40,358 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,402 - root - INFO - 开始执行 ------- 异常登录测试,密码为空
+2019-10-26 22:45:40,402 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,403 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,403 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,403 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,403 - root - INFO - 接口数据: {'username': 'admin', 'password': ''}
+2019-10-26 22:45:40,406 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,406 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-26 22:45:40,406 - root - INFO - 期望值：400
+2019-10-26 22:45:40,407 - root - INFO - 实际值：400
+2019-10-26 22:45:40,407 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,407 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,416 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,416 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,417 - root - INFO - sheet:login, 行数：6， 列数:11, 值:{'data': None, 'meta': {'msg': '参数错误', 'status': 400}}
+2019-10-26 22:45:40,425 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,426 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,426 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,426 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,436 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-login sheet页
+2019-10-26 22:45:40,436 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,436 - root - INFO - sheet:login, 行数：6， 列数:12, 值:PASS
+2019-10-26 22:45:40,445 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,447 - root - INFO - ==========结束执行测试用例集===========
+2019-10-26 22:45:40,449 - root - INFO - ==========开始执行测试用例集===========
+2019-10-26 22:45:40,449 - root - INFO - 开始执行 ------- 正常登录测试 用例
+2019-10-26 22:45:40,449 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,450 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30'}
+2019-10-26 22:45:40,450 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/login
+2019-10-26 22:45:40,450 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,450 - root - INFO - 接口数据: {'username': 'admin', 'password': '123456'}
+2019-10-26 22:45:40,517 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,517 - root - INFO - 响应结果json:{'data': {'id': 500, 'rid': 30, 'username': 'admin', 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}, 'meta': {'msg': '登录成功', 'status': 200}}
+2019-10-26 22:45:40,518 - root - INFO - 开始执行 ------- 添加用户， 正常用例 用例
+2019-10-26 22:45:40,518 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,518 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,519 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,519 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,519 - root - INFO - 接口数据: {'username': 'wang', 'password': '123456', 'email': '123@qq.com', 'mobile': '13776765656'}
+2019-10-26 22:45:40,525 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,525 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,525 - root - INFO - 请求发送后，开始进行 mysql 数据库检查
+2019-10-26 22:45:40,526 - root - INFO - sql：['select * from sp_manager where mg_name = "wang2" ']
+2019-10-26 22:45:40,526 - root - INFO - 开始进行 返回值 断言
+2019-10-26 22:45:40,526 - root - INFO - 返回值-期望值：201
+2019-10-26 22:45:40,526 - root - INFO - 返回值-实际值：400
+2019-10-26 22:45:40,527 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,527 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,536 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,537 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,537 - root - INFO - sheet:user, 行数：3， 列数:13, 值:assert '201' == '400'
+  - 201
+  + 400
+2019-10-26 22:45:40,547 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,547 - root - ERROR - 断言失败：assert '201' == '400'
+  - 201
+  + 400
+2019-10-26 22:45:40,547 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,547 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,556 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,557 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,557 - root - INFO - sheet:user, 行数：3， 列数:11, 值:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,566 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,566 - root - INFO - 接口测试结果：Fail
+2019-10-26 22:45:40,566 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,567 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,577 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,577 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,577 - root - INFO - sheet:user, 行数：3， 列数:12, 值:Fail
+2019-10-26 22:45:40,587 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,593 - root - INFO - 开始执行 ------- 添加用户， 异常用例，用户名为空 用例
+2019-10-26 22:45:40,594 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,594 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,594 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,594 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,595 - root - INFO - 接口数据: {'username': '', 'password': '123456'}
+2019-10-26 22:45:40,598 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,598 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名不能为空', 'status': 400}}
+2019-10-26 22:45:40,598 - root - INFO - 期望值：400
+2019-10-26 22:45:40,598 - root - INFO - 实际值：400
+2019-10-26 22:45:40,599 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,599 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,609 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,610 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,610 - root - INFO - sheet:user, 行数：4， 列数:11, 值:{'data': None, 'meta': {'msg': '用户名不能为空', 'status': 400}}
+2019-10-26 22:45:40,619 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,620 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,620 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,620 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,630 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,630 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,631 - root - INFO - sheet:user, 行数：4， 列数:12, 值:PASS
+2019-10-26 22:45:40,640 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,642 - root - INFO - 开始执行 ------- 添加用户， 异常用例，密码为空 用例
+2019-10-26 22:45:40,642 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,643 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,643 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,643 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,643 - root - INFO - 接口数据: {'username': 'wang1', 'password': ''}
+2019-10-26 22:45:40,646 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,646 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '密码不能为空', 'status': 400}}
+2019-10-26 22:45:40,646 - root - INFO - 期望值：400
+2019-10-26 22:45:40,647 - root - INFO - 实际值：400
+2019-10-26 22:45:40,647 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,647 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,656 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,657 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,657 - root - INFO - sheet:user, 行数：5， 列数:11, 值:{'data': None, 'meta': {'msg': '密码不能为空', 'status': 400}}
+2019-10-26 22:45:40,666 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,667 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,667 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,667 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,676 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,676 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,676 - root - INFO - sheet:user, 行数：5， 列数:12, 值:PASS
+2019-10-26 22:45:40,686 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,688 - root - INFO - 开始执行 ------- 添加用户， 异常用例，邮箱为空 用例
+2019-10-26 22:45:40,688 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,688 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,689 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,689 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,689 - root - INFO - 接口数据: {'username': 'wang2', 'password': '123456', 'email': '', 'mobile': '13776765656'}
+2019-10-26 22:45:40,697 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,697 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,697 - root - INFO - 期望值：400
+2019-10-26 22:45:40,698 - root - INFO - 实际值：400
+2019-10-26 22:45:40,698 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,698 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,708 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,708 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,708 - root - INFO - sheet:user, 行数：6， 列数:11, 值:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,718 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,718 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,718 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,718 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,728 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,728 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,728 - root - INFO - sheet:user, 行数：6， 列数:12, 值:PASS
+2019-10-26 22:45:40,737 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,739 - root - INFO - 开始执行 ------- 添加用户， 异常用例，手机号空 用例
+2019-10-26 22:45:40,740 - root - INFO - 准备发送 POST 请求
+2019-10-26 22:45:40,740 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,740 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,741 - root - INFO - 接口类型: POST
+2019-10-26 22:45:40,741 - root - INFO - 接口数据: {'username': 'wang3', 'password': '123456', 'email': '123@qq.com', 'mobile': ''}
+2019-10-26 22:45:40,747 - root - INFO - 完成 POST 请求
+2019-10-26 22:45:40,747 - root - INFO - 响应结果json:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,747 - root - INFO - 期望值：201
+2019-10-26 22:45:40,747 - root - INFO - 实际值：400
+2019-10-26 22:45:40,748 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,748 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,758 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,759 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,759 - root - INFO - sheet:user, 行数：7， 列数:13, 值:assert '201' == '400'
+  - 201
+  + 400
+2019-10-26 22:45:40,768 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,769 - root - ERROR - 断言失败：assert '201' == '400'
+  - 201
+  + 400
+2019-10-26 22:45:40,769 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,769 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,779 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,779 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,779 - root - INFO - sheet:user, 行数：7， 列数:11, 值:{'data': None, 'meta': {'msg': '用户名已存在', 'status': 400}}
+2019-10-26 22:45:40,788 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,789 - root - INFO - 接口测试结果：Fail
+2019-10-26 22:45:40,789 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,789 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,799 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,800 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,800 - root - INFO - sheet:user, 行数：7， 列数:12, 值:Fail
+2019-10-26 22:45:40,809 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,814 - root - INFO - 开始执行 ------- 获取所有用户列表 用例
+2019-10-26 22:45:40,815 - root - INFO - 准备发送 GET 请求
+2019-10-26 22:45:40,815 - root - INFO - 请求头: {'User-Agent': 'Mozilla/5.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '30', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjozMCwiaWF0IjoxNTcyMTAxMTQwLCJleHAiOjE1NzIxODc1NDF9.K9we5jSf08tLuafuhRChKt2LLcHZMyfSLYahTIp0w70'}
+2019-10-26 22:45:40,815 - root - INFO - 接口地址: http://127.0.0.1:8888/api/private/v1/users
+2019-10-26 22:45:40,815 - root - INFO - 接口类型: GET
+2019-10-26 22:45:40,816 - root - INFO - 接口数据: {'query': '', 'pagenum': 1, 'pagesize': 10}
+2019-10-26 22:45:40,826 - root - INFO - 完成 GET 请求
+2019-10-26 22:45:40,826 - root - INFO - 响应结果json:{'data': {'total': 8, 'pagenum': 1, 'users': [{'id': 500, 'role_name': '主管', 'username': 'admin', 'create_time': 1486720211, 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'mg_state': True}, {'id': 502, 'role_name': '主管', 'username': 'linken', 'create_time': 1486720211, 'mobile': '120', 'email': '123@qq.com', 'mg_state': True}, {'id': 508, 'role_name': '测试角色', 'username': 'asdf1', 'create_time': 1511853015, 'mobile': '1231231', 'email': 'adfsa@qq.com', 'mg_state': True}, {'id': 574, 'role_name': '测试角色2', 'username': '12333', 'create_time': 1560799836, 'mobile': '13', 'email': '123', 'mg_state': False}, {'id': 597, 'role_name': '主管', 'username': 'luhy', 'create_time': 1565776785, 'mobile': '137722321878767611111233', 'email': '11111123@qq.com231', 'mg_state': True}, {'id': 710, 'role_name': '超级管理员', 'username': 'wang', 'create_time': 1572098620, 'mobile': '13776765656', 'email': '123@qq.com', 'mg_state': False}, {'id': 711, 'role_name': '超级管理员', 'username': 'wang2', 'create_time': 1572098621, 'mobile': '13776765656', 'email': '', 'mg_state': False}, {'id': 712, 'role_name': '超级管理员', 'username': 'wang3', 'create_time': 1572098621, 'mobile': '', 'email': '123@qq.com', 'mg_state': False}]}, 'meta': {'msg': '获取管理员列表成功', 'status': 200}}
+2019-10-26 22:45:40,826 - root - INFO - 期望值：200
+2019-10-26 22:45:40,827 - root - INFO - 实际值：200
+2019-10-26 22:45:40,827 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,827 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,837 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,837 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,837 - root - INFO - sheet:user, 行数：2， 列数:11, 值:{'data': {'total': 8, 'pagenum': 1, 'users': [{'id': 500, 'role_name': '主管', 'username': 'admin', 'create_time': 1486720211, 'mobile': '123456783231', 'email': 'adsfad@qq.com', 'mg_state': True}, {'id': 502, 'role_name': '主管', 'username': 'linken', 'create_time': 1486720211, 'mobile': '120', 'email': '123@qq.com', 'mg_state': True}, {'id': 508, 'role_name': '测试角色', 'username': 'asdf1', 'create_time': 1511853015, 'mobile': '1231231', 'email': 'adfsa@qq.com', 'mg_state': True}, {'id': 574, 'role_name': '测试角色2', 'username': '12333', 'create_time': 1560799836, 'mobile': '13', 'email': '123', 'mg_state': False}, {'id': 597, 'role_name': '主管', 'username': 'luhy', 'create_time': 1565776785, 'mobile': '137722321878767611111233', 'email': '11111123@qq.com231', 'mg_state': True}, {'id': 710, 'role_name': '超级管理员', 'username': 'wang', 'create_time': 1572098620, 'mobile': '13776765656', 'email': '123@qq.com', 'mg_state': False}, {'id': 711, 'role_name': '超级管理员', 'username': 'wang2', 'create_time': 1572098621, 'mobile': '13776765656', 'email': '', 'mg_state': False}, {'id': 712, 'role_name': '超级管理员', 'username': 'wang3', 'create_time': 1572098621, 'mobile': '', 'email': '123@qq.com', 'mg_state': False}]}, 'meta': {'msg': '获取管理员列表成功', 'status': 200}}
+2019-10-26 22:45:40,847 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,847 - root - INFO - 接口测试结果：PASS
+2019-10-26 22:45:40,848 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,848 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx 文件
+2019-10-26 22:45:40,857 - root - INFO - 准备开始打开 C:\Users\lucas\PycharmProjects\python_api_framework\TestData\case.xlsx-user sheet页
+2019-10-26 22:45:40,857 - root - INFO - 准备写入数据
+2019-10-26 22:45:40,858 - root - INFO - sheet:user, 行数：2， 列数:12, 值:PASS
+2019-10-26 22:45:40,867 - root - INFO - 写入数据成功
+2019-10-26 22:45:40,868 - root - INFO - ==========结束执行测试用例集===========
+2019-10-26 22:45:40,869 - root - INFO - ==========结束 XX模块 测试===========
